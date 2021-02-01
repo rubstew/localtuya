@@ -1,6 +1,15 @@
 This is a development fork from https://github.com/rospogrigio/localtuya with the base of the branch climate_platform.
 
 I have integrated successfully my Tuya thermostat ME901.
+The functions implemented are:
+
+- on/off
+- auto mode
+- manual mode
+- change target temperature
+- see current temperature
+- see current action (off, heating, idle)
+
 This is my DPS: "dps":{"1":true,"2":"auto","16":15,"19":60,"24":185,"36":"close","40":false,"45":0}
 
 Configuration needed for this dps:
