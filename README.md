@@ -1,3 +1,33 @@
+This is a development fork from https://github.com/rospogrigio/localtuya with the base of the branch climate_platform.
+
+I have integrated successfully my Tuya thermostat ME901.
+This is my DPS: "dps":{"1":true,"2":"auto","16":15,"19":60,"24":185,"36":"close","40":false,"45":0}
+
+Configuration needed for this dps:
+```
+localtuya:
+  - host: 192.168.1.144
+    device_id: (device_id)
+    local_key: (local_key)
+    friendly_name: Caldera
+    protocol_version: "3.3"
+    entities:
+    - platform: climate
+      friendly_name: Caldera
+      id: 1
+      target_temperature_dp: 16
+      current_temperature_dp: 24
+      hvac_mode_dp: 2
+      action: 36
+      precision: 0.1
+```
+This is my Thermostat ME901: 
+![logo](https://ae01.alicdn.com/kf/He5bbdebfd86b4ad88a0a31b7cc89e4d8O/Termostato-de-calefacci-n-Digital-LCD-programable-montado-en-la-pared-Wifi-controlador-de-temperatura-de.jpg)
+
+If you tested it you can send me your comments and if there is not working something I can fixed it!
+
+**** Original LocalTuya Readme **** 
+
 ![logo](https://github.com/rospogrigio/localtuya-homeassistant/blob/master/img/logo-small.png)
 
 A Home Assistant custom Integration for local handling of Tuya-based devices.
